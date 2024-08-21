@@ -16,7 +16,7 @@ const FooterNav = () => {
           <div>
             <Link
               href="/"
-              className="txt-compact-xlarge-plus text-ui-fg-subtle text-white hover:underline uppercase"
+              className="text-white text-2xl font-bold"
             >
               {process.env.NEXT_PUBLIC_NAME_ECOMMERCE}
             </Link>
@@ -46,7 +46,7 @@ const FooterNav = () => {
                 </li>
                 <li>
                   <p className="font-bold mt-2 text-white">WHATSAPP</p>
-                  <span className="text-white">(+56 9) 44218010</span>
+                  <span className="text-white">(+56 9) 86182719</span>
                 </li>
               </ul>
             </div>

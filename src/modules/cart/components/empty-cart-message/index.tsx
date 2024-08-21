@@ -14,7 +14,7 @@ const EmptyCartMessage = () => {
         No tienes nada en tu carrito. Cambiemos eso, use el enlace a continuación para comenzar a explorar nuestros productos.
       </Text>
       <UnderlineLink href="/store">
-        <div className="border border-[#FF5733] p-5 w-[220px] flex justify-center">
+        <div className="border border-[#6c4b2b] p-5 w-[220px] flex justify-center">
           Ir a la tienda
         </div>
       </UnderlineLink>

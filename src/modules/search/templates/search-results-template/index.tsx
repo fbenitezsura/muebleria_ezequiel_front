@@ -30,7 +30,7 @@ const SearchResultsTemplate = ({ query, hits }: SearchResultsTemplateProps) => {
         <div>
           <p>No se han encontrado resultados para: <span className="font-bold">"{query}"</span></p>
         </div>
-        <div className="border border-[#FF5733] p-5 w-[220px] flex justify-center mt-10">
+        <div className="border border-[#6c4b2b] p-5 w-[220px] flex justify-center mt-10">
           <UnderlineLink href="/store">Ir a la tienda</UnderlineLink>
         </div>
       </div>

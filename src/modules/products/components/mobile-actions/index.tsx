@@ -58,7 +58,7 @@ const MobileActions: React.FC<MobileActionsProps> = ({ product, show }) => {
                   {selectedPrice.price_type === "sale" && (
                     <p>
                       <span className="line-through text-small-regular">
-                        <ShowNumberFormat className="text-[16px] text-[#FF5733] font-semibold" value={selectedPrice.calculated_price}/>
+                        <ShowNumberFormat className="text-[16px] text-[#6c4b2b] font-semibold" value={selectedPrice.calculated_price}/>
                       </span>
                     </p>
                   )} 
@@ -68,7 +68,7 @@ const MobileActions: React.FC<MobileActionsProps> = ({ product, show }) => {
                         selectedPrice.price_type === "sale",
                     })}
                   >
-                   <ShowNumberFormat className="text-[16px] text-[#FF5733] font-semibold" value={selectedPrice.calculated_price}/>
+                   <ShowNumberFormat className="text-[16px] text-[#6c4b2b] font-semibold" value={selectedPrice.calculated_price}/>
                   </span>
                 </div>
               ) : (

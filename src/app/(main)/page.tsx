@@ -8,7 +8,7 @@ import { Metadata } from "next"
 import { Suspense } from "react"
 
 export const metadata: Metadata = {
-  title: "EHFConcept",
+  title: "Muebleria Ezequiel",
   description:
     "A performant frontend ecommerce starter template with Next.js 14 and Medusa.",
 }
@@ -22,7 +22,7 @@ export default async function Home() {
     <>
       <Slider
         typeSlider={'banner'}
-        data={[{ urlImgDesktop: "/img/banners/banner1.jpeg", urlImgMobile: "/img/banners/banner1m.webp" }, { urlImgDesktop: "/img/banners/banner2.jpeg", urlImgMobile: "/img/banners/banner2.jpeg" }]}
+        data={[{ urlImgDesktop: "/img/banners/banner1.webp", urlImgMobile: "/img/banners/banner1m.webp" }, { urlImgDesktop: "/img/banners/banner2.jpeg", urlImgMobile: "/img/banners/banner2.jpeg" }]}
       />
       <FeaturedCategory collections={collections} />
       <Suspense fallback={<SkeletonHomepageProducts count={count} />}>

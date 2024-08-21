@@ -14,7 +14,7 @@ const SignInPrompt = () => {
       </div>
       <div>
         <Link href="/account/login">
-          <Button variant="secondary" className="bg-[#FF5733] text-white w-full hover:bg-[#FF5733] h-10">
+          <Button variant="secondary" className="bg-[#6c4b2b] text-white w-full hover:bg-[#6c4b2b] h-10">
             Iniciar sesión
           </Button>
         </Link>

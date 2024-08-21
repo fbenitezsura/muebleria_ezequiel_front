@@ -17,7 +17,7 @@ const TyCTemplate = () => {
                 La responsabilidad de la información personal suministrada por el Usuario, incluidos los datos de envío cuando corresponda, recae exclusivamente sobre la persona que la proporciona. Dicha información se utiliza para inscribir al Usuario en programas y servicios, crear cuentas personales, gestionar y hacer seguimiento de pedidos, responder a correos electrónicos, así como para ofrecer detalles sobre su cuenta y los productos o servicios adquiridos. Nos reservamos el derecho de emplear esta información para enviar correos electrónicos sobre su cuenta, los productos o servicios adquiridos, y también para comunicar promociones, productos o servicios adicionales. El Usuario tiene la opción de solicitar en cualquier momento que se detenga el envío de estos correos electrónicos.
             </p>
             <h2 className="mb-[8px] text-[16px] font-bold max-w-[670px]">Términos y Condiciones de Venta</h2>
-            <p className="mb-[16px] text-left max-w-[670px] mx-auto">Estos términos y condiciones, rigen la venta de productos por parte de <strong>EHF CONCEPT</strong>, a usted como cliente. Al realizar una compra en nuestra mueblería, usted acepta estos términos en su totalidad.</p>
+            <p className="mb-[16px] text-left max-w-[670px] mx-auto">Estos términos y condiciones, rigen la venta de productos por parte de <strong>{process.env.NEXT_PUBLIC_NAME_ECOMMERCE}</strong>, a usted como cliente. Al realizar una compra en nuestra mueblería, usted acepta estos términos en su totalidad.</p>
             <h2 className="mb-[8px] text-[16px] font-bold max-w-[670px]">1. Productos</h2>
             <ul className="mb-[16px]">
                 <li>Nos esforzamos por garantizar que los productos que vendemos sean de alta calidad y correspondan con la descripción proporcionada en nuestra tienda.</li>
@@ -50,7 +50,7 @@ const TyCTemplate = () => {
             <h2 className="mb-[8px] text-[16px] font-bold max-w-[670px]">7. Ley Aplicable</h2>
             <p className="mb-[16px] text-left max-w-[670px] mx-auto">Estos términos se rigen por la Ley N° 19.496 del Consumidor en Chile y cualquier disputa se resolverá en los tribunales de Concepción.</p>
             <h2 className="mb-[8px] text-[16px] font-bold max-w-[670px]">8. Contacto</h2>
-            <p className="mb-[16px] text-left max-w-[670px] mx-auto">Para cualquier consulta relacionada con su compra, contáctenos a través de <a href="mailto:ehfconcept24@gmail.com">ehfconcept24@gmail.com</a></p>
+            <p className="mb-[16px] text-left max-w-[670px] mx-auto">Para cualquier consulta relacionada con su compra, contáctenos a través de <a href="mailto:ezequielmuebleria@gmail.com">ezequielmuebleria@gmail.com</a></p>
         </div>
     )
 

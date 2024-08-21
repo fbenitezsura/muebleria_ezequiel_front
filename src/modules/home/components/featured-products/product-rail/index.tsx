@@ -15,7 +15,7 @@ const ProductRail = ({ collections }: { collections: ProductCollection }) => {
       <div className="content-container py-2">
         <div className="flex justify-between mb-8">
           <Text className="text-[27px] font-bold">{collections.title}</Text>
-          <InteractiveLink className="bg-white hover:bg-[#FF5733] hover:text-white text-[#FF5733] px-[16px] py-[10px] border-1 border-[#FF5733] rounded" href={`/collections/${collections.handle}`}>
+          <InteractiveLink className="bg-white hover:bg-[#6c4b2b] hover:text-white text-[#6c4b2b] px-[16px] py-[10px] border-1 border-[#6c4b2b] rounded" href={`/collections/${collections.handle}`}>
             Ver Todos
           </InteractiveLink>
         </div>
