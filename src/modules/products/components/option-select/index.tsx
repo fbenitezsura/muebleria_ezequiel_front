@@ -18,25 +18,46 @@ const OptionSelect: React.FC<OptionSelectProps> = ({
 }) => {
   const filteredOptions = option.values.map((v) => v.value).filter(onlyUnique)
 
+  // Mapeo de nombres de colores a códigos hexadecimales
+  const colorMap: Record<string, string> = {
+    chocolate: "#D2691E",
+    blanco: "#FFFFFF",
+    negro: "#000000",
+    // Añade más colores según sea necesario
+  }
+
   return (
     <div className="flex flex-col gap-y-3">
-      <span className="text-sm">{title}</span>
-      <div className="flex flex-wrap justify-between gap-2">
+      <span className="text-[24px]">{title}</span>
+      <div className="flex flex-wrap gap-2">
         {filteredOptions.map((v) => {
+          const isSelected = v === current
+
+          // Obtener el código de color del mapeo
+          const colorCode = title.toLowerCase() === "color"
+            ? colorMap[v.toLowerCase()] || "#000000" // Color predeterminado si no se encuentra en el mapeo
+            : undefined
+
           return (
             <button
               onClick={() => updateOption({ [option.id]: v })}
               key={v}
               className={clsx(
-                "border-ui-border-base bg-ui-bg-subtle border text-small-regular h-10 rounded-rounded p-2 flex-1 ",
-                {
-                  "border-ui-border-interactive": v === current,
-                  "hover:shadow-elevation-card-rest transition-shadow ease-in-out duration-150":
-                    v !== current,
-                }
+                "flex items-center justify-center",
+                title.toLowerCase() === "color"
+                  ? "w-8 h-8 rounded-full border"
+                  : "h-10 rounded p-2 flex-1 text-small-regular",
+                isSelected
+                  ? "ring-2 ring-black"
+                  : "hover:shadow-md transition-shadow duration-150"
               )}
+              style={
+                title.toLowerCase() === "color"
+                  ? { backgroundColor: colorCode }
+                  : {}
+              }
             >
-              {v}
+              {title.toLowerCase() === "color" ? "" : v}
             </button>
           )
         })}

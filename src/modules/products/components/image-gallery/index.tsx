@@ -14,7 +14,7 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
           return (
             <Container
               key={image.id}
-              className="relative aspect-[34/34] w-full overflow-hidden bg-ui-bg-subtle"
+              className="relative h-full min-h-[400px] w-full small:w-[320px] md:w-[500px] overflow-hidden bg-ui-bg-subtle"
               id={image.id}
             >
               <Image
@@ -25,7 +25,7 @@ const ImageGallery = ({ images }: ImageGalleryProps) => {
                 fill
                 sizes="(max-width: 576px) 280px, (max-width: 768px) 360px, (max-width: 992px) 480px, 800px"
                 style={{
-                  objectFit: "cover",
+                  objectFit: "fill",
                 }}
               />
             </Container>

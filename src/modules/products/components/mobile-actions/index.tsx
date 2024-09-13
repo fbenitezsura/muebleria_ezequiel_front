@@ -25,7 +25,7 @@ const MobileActions: React.FC<MobileActionsProps> = ({ product, show }) => {
   const selectedPrice = useMemo(() => {
     const { variantPrice, cheapestPrice } = price
 
-    return variantPrice || cheapestPrice || null
+    return cheapestPrice || null
   }, [price])
 
   const customUpdateOptions = (options: Record<string, string>) => {

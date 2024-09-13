@@ -63,7 +63,7 @@ const Input = React.forwardRef<HTMLInputElement, InputProps>(
             items={sortOptions}
             value={sortBy}
             handleChange={(e) => { setSortBy(e) }}
-            className="mr-2"
+            className="mr-2 h-full"
             variant="inputPhone"
           />
           <div className="w-full relative">

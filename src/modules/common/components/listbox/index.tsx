@@ -17,9 +17,9 @@ export default function Dropdown({
 }) {
 
   return (
-    <div className="w-52 text-right">
+    <div className="w-52 text-right h-full">
       <Menu>
-        <MenuButton className="inline-flex w-full md:w-[150px] items-center gap-2 rounded-md bg-[#6C4B2B] py-1.5 px-3 text-sm/6 font-semibold text-white shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-[#9f6e3e] data-[open]:bg-[#9f6e3e] data-[focus]:outline-1 data-[focus]:outline-white">
+        <MenuButton className="inline-flex h-full mr-2 w-full md:w-[150px] items-center gap-2 rounded-md bg-white border border-[#6c4b2b] text-black py-1.5 px-3 text-sm/6 font-semibold shadow-inner shadow-white/10 focus:outline-none data-[focus]:outline-1 data-[focus]:outline-white">
            {value.label}
         </MenuButton>
 
